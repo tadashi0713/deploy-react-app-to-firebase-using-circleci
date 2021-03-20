@@ -5,9 +5,9 @@ const App = () => {
   const [showText, setShowText] = useState(false)
   const onClick = () => setShowText(true)
   return (
-    <div className="App">
-      <button className="Button" onClick={onClick}>Click</button>
-      { showText ? <p className="Text">Hello</p> : null }
+    <div data-testid="App">
+      <button data-testid="Button" onClick={onClick}>Click</button>
+      { showText ? <p data-testid="Text">Hello</p> : null }
     </div>
   );
 }
