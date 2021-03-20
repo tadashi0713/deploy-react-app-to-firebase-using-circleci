@@ -10,7 +10,18 @@ jobs:
       - node/install-packages:
           pkg-manager: yarn
       - run: yarn run test
+  deploy:
+    docker:
+      - image: 'circleci/node:15.12'
+    steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: yarn
+      - run: yarn run deploy     
 workflows:
   test:
     jobs:
       - test
+  deploy:
+    jobs:
+      - deploy
