@@ -21,6 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "uitest:chrome": "start-server-and-test 'yarn start' http://localhost:3000 'testcafe chrome uitest'",
     "deploy": "yarn run build && npx firebase deploy --token=$FIREBASE_TOKEN"
   },
   "eslintConfig": {
@@ -42,6 +43,8 @@
     ]
   },
   "devDependencies": {
-    "firebase-tools": "^9.6.1"
+    "firebase-tools": "^9.6.1",
+    "start-server-and-test": "^1.12.1",
+    "testcafe": "^1.12.0"
   }
 }
