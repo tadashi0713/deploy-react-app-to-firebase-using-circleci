@@ -24,6 +24,7 @@
     "uitest:chrome": "start-server-and-test 'yarn start' http://localhost:3000 'testcafe chrome uitest'",
     "uitest:firefox": "start-server-and-test 'yarn start' http://localhost:3000 'testcafe firefox uitest'",
     "uitest:safari": "start-server-and-test 'yarn start' http://localhost:3000 'testcafe safari uitest'",
+    "uitest:ie": "start-server-and-test 'yarn start' http://localhost:3000 'testcafe ie uitest'",
     "deploy": "yarn run build && npx firebase deploy --token=$FIREBASE_TOKEN"
   },
   "eslintConfig": {
