@@ -10,6 +10,8 @@ jobs:
       - node/install-packages:
           pkg-manager: yarn
       - run: yarn run test
+      - run: yarn run uitest:chrome
+      - run: yarn run uitest:firefox
   deploy:
     docker:
       - image: 'circleci/node:15.12'

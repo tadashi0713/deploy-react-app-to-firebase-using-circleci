@@ -22,6 +22,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "uitest:chrome": "start-server-and-test 'yarn start' http://localhost:3000 'testcafe chrome uitest'",
+    "uitest:firefox": "start-server-and-test 'yarn start' http://localhost:3000 'testcafe firefox uitest'",
+    "uitest:safari": "start-server-and-test 'yarn start' http://localhost:3000 'testcafe safari uitest'",
     "deploy": "yarn run build && npx firebase deploy --token=$FIREBASE_TOKEN"
   },
   "eslintConfig": {
